@@ -1,0 +1,20 @@
+/* MAIN STYLING */
+* {
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    /* Main colors */
+    --main-bg-color: #070F2B;
+    --main-navbar-color: #1B1A55;
+    --main-header-color: #535C91;
+    --main-text-color: #FFFFFF;
+
+    /* Font styling */
+    --main-font: "Trebuchet MS";
+    --header1-size: 35px;
+    --header2-size: 30px;
+    --header3-size: 25px;
+    --body-size: 18px;
+}
