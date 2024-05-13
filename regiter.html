@@ -6,6 +6,37 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            /* Header polos tanpa elemen apapun */
+        }
+        .left-sidebar {
+            width: 230px;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .blank-container {
+            width: calc(70% - 375px); /* Sisakan ruang setelah sidebar kiri */
+            height: 85vh; /* Gunakan tinggi layar penuh */
+            background-color: #f0f0f0; /* Warna yang sama dengan sidebar kiri */
+            margin-left: calc(60% - 375px); /* Sisipkan ke tengah */
+            margin-top: calc(30% - 375px);/* Jarak dari header */
+            float: left;
+            clear: both; /* Hindari overlapping dengan sidebar kiri */
+        }
+        .sidebar-box {
+            width: 230px;
+            height: 200px;
+            background-color: #f0f0f0; /* Warna yang sama dengan sidebar kiri */
+            margin: 10px;
+            float: left;
+        }
+    </style>
     <title>Newsmeter</title>
 </head>
 <body>
@@ -23,7 +54,9 @@
             <a href="" class="nav-link">TELUSURI</a>
         </div>
     </nav>
-    <div class="blank-container"></div> <!-- Kotak kosong di sebelah kanan -->
+    <div class="blank-container">
+        <div class="sidebar-box"></div> <!-- Kotak kosong di sebelah kanan -->
+    </div>
 </body>
 </html>
 
