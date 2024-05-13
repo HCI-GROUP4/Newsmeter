@@ -22,19 +22,29 @@
         }
         .blank-container {
             width: calc(70% - 375px); /* Sisakan ruang setelah sidebar kiri */
-            height: 85vh; /* Gunakan tinggi layar penuh */
-            background-color: #f0f0f0; /* Warna yang sama dengan sidebar kiri */
+            height: 50vh; /* Gunakan tinggi layar penuh */
+            background-color: #1B1A55; /* Warna yang sama dengan sidebar kiri */
             margin-left: calc(60% - 375px); /* Sisipkan ke tengah */
             margin-top: calc(30% - 375px);/* Jarak dari header */
             float: left;
             clear: both; /* Hindari overlapping dengan sidebar kiri */
+            position: relative; /* Untuk menempatkan sidebar-box secara absolut */
         }
         .sidebar-box {
-            width: 230px;
-            height: 200px;
-            background-color: #f0f0f0; /* Warna yang sama dengan sidebar kiri */
-            margin: 10px;
-            float: left;
+            width: 350px; /* Lebar sidebar-box */
+            height: 55px;
+            margin: 0%;
+            position: absolute; /* Tempatkan secara absolut */
+            top: 0; /* Posisi dari atas */
+        }
+        .sidebar-box.left {
+            left: 0; /* Tempatkan di sebelah kiri */
+            background-color: #333265; /* Warna yang berbeda */
+        }
+        .sidebar-box.right {
+            right: 0; /* Tempatkan di sebelah kanan */
+            background-color: #9290C3; /* Warna yang berbeda */
+           
         }
     </style>
     <title>Newsmeter</title>
@@ -55,8 +65,8 @@
         </div>
     </nav>
     <div class="blank-container">
-        <div class="sidebar-box"></div> <!-- Kotak kosong di sebelah kanan -->
+        <div class="sidebar-box left"></div> <!-- Kotak kosong di sebelah kiri -->
+        <div class="sidebar-box right"></div> <!-- Kotak kosong di sebelah kanan -->
     </div>
 </body>
 </html>
-
