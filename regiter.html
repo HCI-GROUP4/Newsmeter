@@ -6,63 +6,24 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f0f0f0;
-            padding: 10px;
-        }
-        .content-container {
-            display: flex;
-            width: 100%;
-        }
-        .left-sidebar {
-            width: 250px;
-            background-color: #f0f0f0;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .additional-box {
-            flex: 1;
-            background-color: #f0f0f0;
-            padding: 10px;
-            box-sizing: border-box;
-            margin-left: 10px;
-        }
-    </style>
     <title>Newsmeter</title>
 </head>
 <body>
     <header>
-        <div class="search-bar-container">
-            <img src="assets/search-icon.png" alt="search icon" height="75%">
-            <input type="text" class="search-bar" placeholder="Search here...">
-        </div>
-        <button id="login-button" class="login-button">LOGIN</button>
-        <div id="header-profile-container" class="header-profile-container">
-            <img src="assets/header-profile.png" alt="profile picture" height="80%">
-            <p id="profile-name">[Name]</p>
-        </div>
+        <!-- Header polos tanpa elemen apapun -->
     </header>
-    <div class="content-container">
-        <nav class="left-sidebar">
-            <img src="/assets/logo.png" alt="newsmeter logo" width="100%">
-            <div class="link-container">
-                <span><img src="assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
-                <a href="index.html" class="nav-link">BERANDA</a>
-            </div>
-            <div class="link-container">
-                <span><img src="assets/telusuri-icon.png" alt="telusuri icon" width="87%"></span>
-                <a href="" class="nav-link">TELUSURI</a>
-            </div>
-        </nav>
-        <div class="additional-box">
-            <!-- Konten di sebelah kanan sidebar kiri dan di bawah header -->
+    <nav class="left-sidebar">
+        <img src="/assets/logo.png" alt="newsmeter logo" width="100%">
+        <div class="link-container">
+            <span><img src="assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
+            <a href="index.html" class="nav-link">BERANDA</a>
         </div>
-    </div>
+        <div class="link-container">
+            <span><img src="assets/telusuri-icon.png" alt="telusuri icon" width="87%"></span>
+            <a href="" class="nav-link">TELUSURI</a>
+        </div>
+    </nav>
+    <div class="blank-container"></div> <!-- Kotak kosong di sebelah kanan -->
 </body>
 </html>
 
