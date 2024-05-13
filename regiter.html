@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            /* Header polos tanpa elemen apapun */
+            
         }
         .left-sidebar {
             width: 230px;
@@ -21,29 +21,29 @@
             float: left;
         }
         .blank-container {
-            width: calc(70% - 375px); /* Sisakan ruang setelah sidebar kiri */
-            height: 50vh; /* Gunakan tinggi layar penuh */
-            background-color: #1B1A55; /* Warna yang sama dengan sidebar kiri */
-            margin-left: calc(60% - 375px); /* Sisipkan ke tengah */
-            margin-top: calc(30% - 375px);/* Jarak dari header */
+            width: calc(70% - 375px);
+            height: 50vh;
+            background-color: #1B1A55;
+            margin-left: calc(60% - 375px);
+            margin-top: calc(30% - 375px);
             float: left;
-            clear: both; /* Hindari overlapping dengan sidebar kiri */
-            position: relative; /* Untuk menempatkan sidebar-box secara absolut */
+            clear: both;
+            position: relative;
         }
         .sidebar-box {
-            width: 350px; /* Lebar sidebar-box */
+            width: 350px;
             height: 55px;
             margin: 0%;
-            position: absolute; /* Tempatkan secara absolut */
-            top: 0; /* Posisi dari atas */
+            position: absolute;
+            top: 0;
         }
         .sidebar-box.left {
-            left: 0; /* Tempatkan di sebelah kiri */
-            background-color: #333265; /* Warna yang berbeda */
+            left: 0; 
+            background-color: #333265;
         }
         .sidebar-box.right {
-            right: 0; /* Tempatkan di sebelah kanan */
-            background-color: #9290C3; /* Warna yang berbeda */
+            right: 0; 
+            background-color: #9290C3; 
            
         }
     </style>
@@ -51,7 +51,7 @@
 </head>
 <body>
     <header>
-        <!-- Header polos tanpa elemen apapun -->
+        <!-- Header polos-->
     </header>
     <nav class="left-sidebar">
         <img src="/assets/logo.png" alt="newsmeter logo" width="100%">
@@ -65,8 +65,8 @@
         </div>
     </nav>
     <div class="blank-container">
-        <div class="sidebar-box left"></div> <!-- Kotak kosong di sebelah kiri -->
-        <div class="sidebar-box right"></div> <!-- Kotak kosong di sebelah kanan -->
+        <div class="sidebar-box left"></div> 
+        <div class="sidebar-box right"></div> 
     </div>
 </body>
 </html>
