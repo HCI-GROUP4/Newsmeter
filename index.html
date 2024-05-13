@@ -5,14 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
     <title>Newsmeter</title>
 </head>
 <body>
-    <p>Hello, world!</p>
-    <p>King Hansen</p>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <p> suka suka gua dah </p>
-    <p>Tambahin</p>
+    <header>
+        <div class="search-bar-container">
+            <img src="assets/search-icon.png" alt="search icon" height="75%">
+            <input type="text" class="search-bar" placeholder="Search here...">
+        </div>
+        <button id="login-button" class="login-button">LOGIN</button>
+        <div id="header-profile-container" class="header-profile-container">
+            <img src="assets/header-profile.png" alt="profile picture" height="80%">
+            <p id="profile-name">[Name]</p>
+        </div>
+    </header>
+    <nav class="left-sidebar">
+        <img src="/assets/logo.png" alt="newsmeter logo" width="100%">
+        <div class="link-container">
+            <span><img src="assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
+            <a href="index.html" class="nav-link">BERANDA</a>
+        </div>
+        <div class="link-container">
+            <span><img src="assets/telusuri-icon.png" alt="telusuri icon" width="87%"></span>
+            <a href="" class="nav-link">TELUSURI</a>
+        </div>
+    </nav>
+    <aside class="right-sidebar">
+        <h3>Berita Terviral!</h3>
+        <div class="berita-viral-container">
+            <p>1. Presiden terbaru sudah diumumkan!</p>
+            <div class="berita-viral-stats-container">
+                <div class="berita-viral-stats">
+                    <img src="assets/like-icon.png" alt="like icon" height="90%">
+                    <p>3.192</p>
+                </div>
+                <div class="berita-viral-stats">
+                    <img src="assets/comment-icon.png" alt="comment icon" height="90%">
+                    <p>1.827</p>
+                </div>
+            </div>
+        </div>
+        <div class="berita-viral-container">
+            <p>2. Hotman Paris jadi pengacara Prabowo-Gibran</p>
+            <div class="berita-viral-stats-container">
+                <div class="berita-viral-stats">
+                    <img src="assets/like-icon.png" alt="like icon" height="90%">
+                    <p>2.100</p>
+                </div>
+                <div class="berita-viral-stats">
+                    <img src="assets/comment-icon.png" alt="comment icon" height="90%">
+                    <p>1.351</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <nav class="top-filter-bar">
+        <a href="">Politik</a>
+        <a href="">Olahraga</a>
+        <a href="">Entertainment</a>
+        <a href="">Sains</a>
+        <a href="">Dunia Binatang</a>
+        <a href="">Seni</a>
+        <a href="">Kesehatan</a>
+        <a href="">...</a>
+        <img src="assets/next-icon.png" alt="next icon" height="60%">
+    </nav>
+    <main class="main-fixed">
+        <div class="main-scrollable">
+            <div class="content-container">
+                <div class="content-profile">
+                    <img src="assets/content-profile.png" alt="profile logo" height="95%">
+                    <p>Nama Jurnalis</p>
+                </div>
+                <img src="assets/content-img-placeholder.png" alt="placeholder" width="100%">
+                <div class="content-stats-container">
+                    <div class="content-stats">
+                        <img src="assets/like-icon.png" alt="like icon" height="90%">
+                        <p>828</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/comment-icon.png" alt="comment icon" height="90%">
+                        <p>23</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/share-icon.png" alt="share icon" height="90%">
+                        <p>76</p>
+                    </div>
+                </div>
+                <p class="caption">
+                    Caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                </p>
+            </div>
+            <div class="content-container">
+                <div class="content-profile">
+                    <img src="assets/content-profile.png" alt="profile logo" height="95%">
+                    <p>Nama Jurnalis</p>
+                </div>
+                <img src="assets/content-img-placeholder.png" alt="placeholder" width="100%">
+                <div class="content-stats-container">
+                    <div class="content-stats">
+                        <img src="assets/like-icon.png" alt="like icon" height="90%">
+                        <p>828</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/comment-icon.png" alt="comment icon" height="90%">
+                        <p>23</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/share-icon.png" alt="share icon" height="90%">
+                        <p>76</p>
+                    </div>
+                </div>
+                <p class="caption">
+                    Caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                </p>
+            </div>
+            <div class="content-container">
+                <div class="content-profile">
+                    <img src="assets/content-profile.png" alt="profile logo" height="95%">
+                    <p>Nama Jurnalis</p>
+                </div>
+                <img src="assets/content-img-placeholder.png" alt="placeholder" width="100%">
+                <div class="content-stats-container">
+                    <div class="content-stats">
+                        <img src="assets/like-icon.png" alt="like icon" height="90%">
+                        <p>828</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/comment-icon.png" alt="comment icon" height="90%">
+                        <p>23</p>
+                    </div>
+                    <div class="content-stats">
+                        <img src="assets/share-icon.png" alt="share icon" height="90%">
+                        <p>76</p>
+                    </div>
+                </div>
+                <p class="caption">
+                    Caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 </html> 

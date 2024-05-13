@@ -1,7 +1,246 @@
-body {
-    background-color: var(--main-bg-color);
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+    background-color: var(--main-header-color);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 1px 0;
+    color: white;
 }
 
-a, p, h1, h2, h3 {
+header .search-bar-container {
+    background-color: var(--main-navbar-color);
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 30px;
+    border-radius: 30px;
+    width: 50%;
+    height: 60%;
+    gap: 5px;
+}
+
+header input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
     color: var(--main-text-color);
+    width: 95%;
+    font-size: var(--p-size);
+}
+
+header input:focus {
+    outline: 0;
+}
+
+header .login-button {
+    width: 10%;
+    height: 60%;
+    border-radius: 30px;
+    color: #1B1A55;
+    background-color: #9290C3;
+    border-width: 0px;
+    font-size: var(--p-size);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header .header-profile-container {
+    display: none;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+}
+
+/* LEFT SIDEBAR */
+.left-sidebar {
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--main-navbar-color);
+    padding: 50px 20px 10px 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: var(--p-size);
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 1px 0 0;
+    gap: 25px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.link-container span:first-child {
+    width: 15%;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
+/* RIGHT SIDEBAR */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 20px 30px 20px;
+    height: 92vh;
+    width: 15vw;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    background-color: var(--main-navbar-color);
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 0 1px;
+    color: white;
+}
+
+.right-sidebar * {
+    margin: 0;
+}
+
+.right-sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.berita-viral-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.berita-viral-container * {
+    font-size: var(--small-p-size);
+}
+
+.berita-viral-stats-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.berita-viral-stats {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.berita-viral-container p {
+    line-height: 20px;
+}
+
+/* TOP FILTER BAR */
+.top-filter-bar {
+    width: 70vw;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    left: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-navbar-color);
+}
+
+.top-filter-bar * {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+/* MAIN */
+main.main-fixed {
+    position: absolute;
+    width: 70vw;
+    height: 86vh;
+    top: 14vh;
+    left: 15vw;
+    overflow: hidden;
+    color: var(--main-text-color);
+}
+
+.main-scrollable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+/* Content */
+.content-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 45px;
+    gap: 10px;
+}
+
+.content-container * {
+    margin: 0;
+}
+
+.content-profile {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.content-stats-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.content-stats {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.caption {
+    width: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
