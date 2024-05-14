@@ -1,0 +1,133 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+    background-color: var(--main-header-color);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 1px 0;
+    color: white;
+}
+
+header .search-bar-container {
+    background-color: var(--main-navbar-color);
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 30px;
+    border-radius: 30px;
+    width: 50%;
+    height: 60%;
+    gap: 5px;
+}
+
+header input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: var(--main-text-color);
+    width: 95%;
+    font-size: var(--p-size);
+}
+
+header input:focus {
+    outline: 0;
+}
+
+header .login-button {
+    width: 10%;
+    height: 60%;
+    border-radius: 30px;
+    color: #1B1A55;
+    background-color: #9290C3;
+    border-width: 0px;
+    font-size: var(--p-size);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header .header-profile-container {
+    display: none;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+}
+
+/* LEFT SIDEBAR */
+.left-sidebar {
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--main-navbar-color);
+    padding: 50px 20px 10px 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: var(--p-size);
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 1px 0 0;
+    gap: 25px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.link-container span:first-child {
+    width: 15%;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
+.saran-berita h3 {
+    color: var(--main-text-color);
+    position: absolute;
+}
+
+.judul-berita{
+    left: 481px;
+    top: 120px;
+}
+
+.jenis-berita{
+    left: 481px;
+    top: 269px;
+}
+
+.tema-berita{
+    left: 876px;
+    top: 269px;
+}
+
+.lampiran{
+    left: 487px;
+    top: 420px;
+}
+
+.deskripsi{
+    left: 487px;
+    top: 696px;
+}
+
+.long-square{
+    position: absolute;
+    width: 759px;
+    height: 72px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    top: 170px;
+    left: 475px;
+}
