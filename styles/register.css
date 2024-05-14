@@ -109,3 +109,45 @@ header {
     color: #333;
     font-size: 16px;
 } 
+.search-input-email{
+    position: absolute;
+    top: 260px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 80%; 
+    height: 40px; 
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 20px; 
+    padding: 0 20px; 
+    color: #333;
+    font-size: 16px;
+} 
+.search-input-password{
+    position: absolute;
+    top: 320px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 80%; 
+    height: 40px; 
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 20px; 
+    padding: 0 20px; 
+    color: #333;
+    font-size: 16px;
+} 
+.search-input-cpass {
+    position: absolute;
+    top: 380px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 80%; 
+    height: 40px; 
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 20px; 
+    padding: 0 20px; 
+    color: #333;
+    font-size: 16px;
+} 
