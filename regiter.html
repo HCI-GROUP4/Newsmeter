@@ -22,7 +22,7 @@
         }
         .blank-container {
             width: calc(70% - 375px);
-            height: 50vh;
+            height: 75vh;
             background-color: #1B1A55;
             margin-left: calc(60% - 375px);
             margin-top: calc(33% - 375px);
@@ -36,18 +36,23 @@
             margin: 0%;
             position: absolute;
             top: 0;
+            padding: 10px; /* Tambahkan padding untuk teks */
+            color: #fff; /* Warna teks */
+            text-align: center; /* Teks di tengah */
+            line-height: 35px; /* Tinggi garis teks */
+            font-size: 20px; /* Ukuran font */
         }
         .sidebar-box.left {
             left: 0;
-            background-color: #333265;
-        }
-        .sidebar-box.right {
-            right: 0;
             background-color: #9290C3;
         }
-        .search-input-email {
+        .sidebar-box.right { 
+            right: 0;
+            background-color: #333265;
+        }
+        .search-input-fname {
             position: absolute;
-            top: 110px; /* Di bawah sidebar-box dengan jarak yang cukup */
+            top: 80px; /* Di bawah sidebar-box dengan jarak yang cukup */
             left: 50%;
             transform: translateX(-50%); /* Membuatnya tepat di tengah antara dua sidebar-box */
             width: 80%; /* Lebar input */
@@ -59,9 +64,9 @@
             color: #333;
             font-size: 16px;
         } 
-        .search-input-password {
+        .search-input-lname {
             position: absolute;
-            top: 165px; /* Di bawah sidebar-box dengan jarak yang cukup */
+            top: 140px; /* Di bawah sidebar-box dengan jarak yang cukup */
             left: 50%;
             transform: translateX(-50%); /* Membuatnya tepat di tengah antara dua sidebar-box */
             width: 80%; /* Lebar input */
@@ -92,10 +97,10 @@
         </div>
     </nav>
     <div class="blank-container">
-        <div class="sidebar-box left"></div> 
-        <div class="sidebar-box right"></div>
-        <input type="text" class="search-input-email" placeholder="Input Email...">
-        <input type="text" class="search-input-password" placeholder="Input Password...">
+        <div class="sidebar-box left">Login</div>
+        <div class="sidebar-box right">Sign Up</div>
+        <input type="text" class="search-input-fname" placeholder="First Name">
+        <input type="text" class="search-input-lname" placeholder="Last Name">
     </div>
 </body>
 </html>
