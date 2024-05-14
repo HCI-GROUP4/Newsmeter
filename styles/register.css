@@ -2,6 +2,20 @@ body {
     margin: 0;
     padding: 0;
 }
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+    background-color: var(--main-header-color);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 1px 0;
+    color: white;
+}
 
 .left-sidebar {
     width: 15vw;
