@@ -29,11 +29,9 @@
         <input type="text" class="search-input-fname" placeholder="First Name">
         <input type="text" class="search-input-lname" placeholder="Last Name">
 
-        <!-- Ovals for date of birth -->
         <div class="dob-container">
             <select class="dob-select" id="dob-day">
                 <option value="" disabled selected>Day</option>
-                <!-- Add day options from 1 to 31 -->
                 <script>
                     for (let i = 1; i <= 31; i++) {
                         document.write('<option value="' + i + '">' + i + '</option>');
@@ -42,7 +40,6 @@
             </select>
             <select class="dob-select" id="dob-month">
                 <option value="" disabled selected>Month</option>
-                <!-- Add month options from 1 to 12 -->
                 <script>
                     for (let i = 1; i <= 12; i++) {
                         document.write('<option value="' + i + '">' + i + '</option>');
@@ -56,7 +53,6 @@
         <input type="text" class="search-input-password" placeholder="Password">
         <input type="text" class="search-input-cpass" placeholder="Confirm Password">
 
-        <!-- Submit button at the bottom -->
         <button type="submit" class="submit-button">Submit</button>
     </div>
 </body>
