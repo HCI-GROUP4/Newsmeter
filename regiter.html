@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            
+            /* Header polos */
         }
         .left-sidebar {
             width: 230px;
@@ -25,7 +25,7 @@
             height: 50vh;
             background-color: #1B1A55;
             margin-left: calc(60% - 375px);
-            margin-top: calc(30% - 375px);
+            margin-top: calc(33% - 375px);
             float: left;
             clear: both;
             position: relative;
@@ -38,14 +38,41 @@
             top: 0;
         }
         .sidebar-box.left {
-            left: 0; 
+            left: 0;
             background-color: #333265;
         }
         .sidebar-box.right {
-            right: 0; 
-            background-color: #9290C3; 
-           
+            right: 0;
+            background-color: #9290C3;
         }
+        .search-input-email {
+            position: absolute;
+            top: 110px; /* Di bawah sidebar-box dengan jarak yang cukup */
+            left: 50%;
+            transform: translateX(-50%); /* Membuatnya tepat di tengah antara dua sidebar-box */
+            width: 80%; /* Lebar input */
+            height: 40px; /* Tinggi input */
+            background-color: #D8D8D8;
+            border: none;
+            border-radius: 20px; /* Membuat tepian menjadi oval */
+            padding: 0 20px; /* Padding kanan dan kiri */
+            color: #333;
+            font-size: 16px;
+        } 
+        .search-input-password {
+            position: absolute;
+            top: 165px; /* Di bawah sidebar-box dengan jarak yang cukup */
+            left: 50%;
+            transform: translateX(-50%); /* Membuatnya tepat di tengah antara dua sidebar-box */
+            width: 80%; /* Lebar input */
+            height: 40px; /* Tinggi input */
+            background-color: #D8D8D8;
+            border: none;
+            border-radius: 20px; /* Membuat tepian menjadi oval */
+            padding: 0 20px; /* Padding kanan dan kiri */
+            color: #333;
+            font-size: 16px;
+        } 
     </style>
     <title>Newsmeter</title>
 </head>
@@ -66,7 +93,9 @@
     </nav>
     <div class="blank-container">
         <div class="sidebar-box left"></div> 
-        <div class="sidebar-box right"></div> 
+        <div class="sidebar-box right"></div>
+        <input type="text" class="search-input-email" placeholder="Input Email...">
+        <input type="text" class="search-input-password" placeholder="Input Password...">
     </div>
 </body>
 </html>
