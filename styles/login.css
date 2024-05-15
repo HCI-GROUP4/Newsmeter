@@ -79,12 +79,12 @@ header {
 
 .sidebar-form.left {
     left: 0;
-    background-color: #333265;
+    background-color: #9290C3;
 }
 
 .sidebar-form.right {
     right: 0;
-    background-color: #9290C3;
+    background-color: #333265;
 }
 
 #signup-page, #login-page {

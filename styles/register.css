@@ -79,12 +79,12 @@ header {
 
 .sidebar-box.left {
     left: 0;
-    background-color: #9290C3;
+    background-color: #333265;
 }
 
 .sidebar-box.right { 
     right: 0;
-    background-color: #333265;
+    background-color: #9290C3;
 }
 
 .search-input-fname, .search-input-lname, .search-input-email, .search-input-password, .search-input-cpass {
