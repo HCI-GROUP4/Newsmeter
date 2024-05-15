@@ -92,42 +92,109 @@ header .header-profile-container {
     letter-spacing: 1px;
 }
 
-.saran-berita h3 {
+/* FORM */
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: 15vw;
+    padding: 20px;
     color: var(--main-text-color);
-    position: absolute;
+    border-radius: 10px;
+    font-size: var(--h3-size);
 }
 
-.judul-berita{
-    left: 481px;
-    top: 120px;
+.tema-dan-jenis{
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 0%;
+    display: flex;
+    width: 759px;
+    justify-content:space-between;
+    align-items: flex-end;
 }
 
-.jenis-berita{
-    left: 481px;
-    top: 269px;
-}
-
-.tema-berita{
-    left: 876px;
-    top: 269px;
-}
-
-.lampiran{
-    left: 487px;
-    top: 420px;
-}
-
-.deskripsi{
-    left: 487px;
-    top: 696px;
-}
-
-.long-square{
-    position: absolute;
+.form-group {
+    margin-bottom: 50px;
     width: 759px;
     height: 72px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group ::placeholder {
+    color: #1B1A55;
+    opacity: 30%;
+}
+
+.form-group select{
+    display: flex;
+    font-size: var(--h3-size);
+    width: 370px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
     background-color: #D9D9D9;
-    border-radius: 25px;
-    top: 170px;
-    left: 475px;
+    color: #1B1A55;
+}
+
+.form-group input[type="text"]{
+    font-size: var(--h3-size);
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D9D9D9;
+    color: #1B1A55;
+}
+
+.form-upload{
+    margin-bottom: 130px;
+    width: 759px;
+    height: 72px;
+}
+
+.file-upload {
+    border: 2px dashed #1a1a3d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload span {
+    color: #1B1A55;
+    opacity: 30%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-buttons .cancel,
+.form-buttons .send {
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #9290C3;
+    color: #1B1A55;
+    font-size: var(--p-size);
+
 }
