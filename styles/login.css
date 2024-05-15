@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+    background-color: var(--main-header-color);
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 1px 0;
+    color: white;
+}
+
+.left-sidebar {
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--main-navbar-color);
+    padding: 50px 20px 10px 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: var(--p-size);
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 1px 0 0;
+    gap: 25px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+} 
+
+.link-container span:first-child {
+    width: 15%;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
+.Login-container {
+    width: calc(70% - 375px);
+    height: 55vh;
+    background-color: #1B1A55;
+    margin-left: calc(60% - 375px);
+    margin-top: calc(33% - 375px);
+    float: left;
+    clear: both;
+    position: relative;
+}
+
+.sidebar-form {
+    width: 350px;
+    height: 55px;
+    margin: 0%;
+    position: absolute;
+    top: 0;
+    padding: 10px; 
+    color: #fff; 
+    text-align: center; 
+    line-height: 35px; 
+    font-size: 20px; 
+}
+
+.sidebar-form.left {
+    left: 0;
+    background-color: #333265;
+}
+
+.sidebar-form.right {
+    right: 0;
+    background-color: #9290C3;
+}
+
+.login-input-email, .login-input-password {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    color: #333;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-input-email{
+    background-image: url('../assets/email-icon-login.png');
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 45px;
+    top: 80px;
+}
+
+.login-input-password{
+    background-image: url('../assets/password-icon-login.png');
+    background-size: 27px; 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 45px;
+    top: 140px;
+}
+
+.form-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 180px;
+    font-size: 18px;
+}
+
+#forgot-password, #journalist-login{
+    text-decoration: none;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
+.login-button {
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #9290C3;
+    color: 1B1A55;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

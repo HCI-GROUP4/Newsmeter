@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/login.js"></script>
     <title>Newsmeter</title>
 </head>
+
 <body>
-    <p>Hello, world!</p>
+    <header>
+
+    </header>
+    <!-- Left-Sidebar -->
+    <nav class="left-sidebar">
+        <img src="../assets/logo.png" alt="newsmeter logo" width="100%">
+        <div class="link-container">
+            <span><img src="../assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
+            <a href="../index.html" class="nav-link">BERANDA</a>
+        </div>
+        <div class="link-container">
+            <span><img src="../assets/telusuri-icon.png" alt="telusuri icon" width="87%"></span>
+            <a href="" class="nav-link">TELUSURI</a>
+        </div>
+    </nav>
+    
+    <!-- Login Form -->
+    <div class="Login-container">
+        <div class="sidebar-form left">
+            Login
+        </div>
+
+        <div class="sidebar-form right">
+            Sign Up
+        </div>
+        <form>
+            <input type="email" class="login-input-email" placeholder="Email" required>
+            <img src="../assets/email-icon-login.png" class="profile-icon">
+            <input type="password" class="login-input-password" placeholder="Password" required>
+            <img src="../assets/password-icon-login.png" class="password-icon">
+            <div class="form-options">
+                <label for="forgot-password">
+                    <a href="#" id="forgot-password">Forgot Password?</a>
+                </label>
+                <label for="journalist-login">
+                    <a href="#" id="journalist-login">Switch to Journalist Login</a>
+                </label>
+            </div>
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+    </div>
+
 </body>
 </html>
