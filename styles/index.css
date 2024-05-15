@@ -38,8 +38,8 @@ header input:focus {
 }
 
 header .login-button {
-    width: 10%;
-    height: 60%;
+    width: 135%;
+    height: 30px;
     border-radius: 30px;
     color: #1B1A55;
     background-color: #9290C3;

@@ -102,6 +102,12 @@ header {
     box-sizing: border-box;
 }
 
+#signup-page, #login-page {
+    text-decoration: none;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
 .search-input-fname {
     top: 80px;
 }
