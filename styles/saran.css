@@ -6,7 +6,7 @@ header {
     width: 85vw;
     height: 8vh;
     background-color: var(--main-header-color);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 15vw;
     border: solid rgba(255, 255, 255, .3);
@@ -65,7 +65,7 @@ header .header-profile-container {
     align-items: flex-start;
     background-color: var(--main-navbar-color);
     padding: 50px 20px 10px 25px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     font-size: var(--p-size);
@@ -97,22 +97,11 @@ header .header-profile-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 80px;
     margin-left: 15vw;
-    padding: 20px;
     color: var(--main-text-color);
     border-radius: 10px;
     font-size: var(--h3-size);
-}
-
-.tema-dan-jenis{
-    margin-top: 0%;
-    margin-left: 0%;
-    padding: 0%;
-    display: flex;
-    width: 759px;
-    justify-content:space-between;
-    align-items: flex-end;
 }
 
 .form-group {
@@ -131,36 +120,63 @@ header .header-profile-container {
     opacity: 30%;
 }
 
+.tema-dan-jenis{
+    display: flex;
+    width: 759px;
+}
+
+.form-desc {
+    margin-bottom: 200px;
+    width: 759px;
+    height: 72px;
+}
+
+.form-desc label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-desc ::placeholder {
+    color: #1B1A55;
+    opacity: 30%;
+    position: absolute;
+}
+
+.form-desc textarea{
+    font-size: var(--h3-size);
+    width: 759px;
+    height: 200px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    color: #1B1A55;
+    resize: none;
+    box-sizing: border-box;
+}
+
+label{
+    padding-left: 5px;
+}
+
 .form-group select{
     display: flex;
     font-size: var(--h3-size);
     width: 370px;
     height: 60px;
-    padding: 10px;
     border-radius: 50px;
     border: none;
     background-color: #D9D9D9;
     color: #1B1A55;
-}
-
-.form-group input[type="text"]{
-    font-size: var(--h3-size);
-    width: 100%;
-    height: 60px;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
-    background-color: #D9D9D9;
-    color: #1B1A55;
-}
-
-.form-upload{
-    margin-bottom: 130px;
-    width: 759px;
-    height: 72px;
+    padding-left: 15px;
 }
 
 .file-upload {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
     border: 2px dashed #1a1a3d;
     padding: 20px;
     text-align: center;
@@ -168,7 +184,19 @@ header .header-profile-container {
     cursor: pointer;
     background-color: #D9D9D9;
     height: 150px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group input[type="text"]{
+    font-size: var(--h3-size);
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D9D9D9;
+    color: #1B1A55;
 }
 
 .file-upload input[type="file"] {
@@ -183,6 +211,7 @@ header .header-profile-container {
 .form-buttons {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .form-buttons .cancel,
@@ -196,5 +225,4 @@ header .header-profile-container {
     background-color: #9290C3;
     color: #1B1A55;
     font-size: var(--p-size);
-
 }

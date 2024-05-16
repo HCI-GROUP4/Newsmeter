@@ -44,31 +44,40 @@
                 <div class="form-group">
                     <label for="jenis-berita">Jenis Berita</label>
                     <select id="jenis-berita">
-                        <option>Jenis</option>
-                        
+                        <option>Artikel</option>
+                        <option>Biografi</option>
+                        <option>Wawancara</option>
+                        <option>Editorial</option>
+                        <option>Investigasi</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="tema-berita">Tema Berita</label>
                     <select id="tema-berita">
-                        <option>Tema</option>
+                        <option>Politik</option>
+                        <option>Olahraga</option>
+                        <option>Entertainment</option>
+                        <option>Sains</option>
+                        <option>Dunia Binatang</option>
+                        <option>Seni</option>
+                        <option>Kesehatan</option>
                     </select>
                 </div>
             </div>
             <div class="form-upload">
                 <label for="lampiran">Lampiran</label>
-                <div class="file-upload">
-                    <input type="file" id="lampiran">
+                <div class="file-upload" onclick="document.getElementById('lampiran').click();">
                     <span>Drag and Drop or Click here</span>
+                    <input type="file" id="lampiran">
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-desc">
                 <label for="deskripsi">Deskripsi</label>
-                <input type="text" id="deskripsi" placeholder="Masukkan deskripsi..."></input>
+                <textarea id="deskripsi" placeholder="Masukkan deskripsi..."></textarea>
             </div>
             <div class="form-buttons">
                 <button type="button" class="cancel">CANCEL</button>
-                <button type="submit" class="send">SEND</button>
+                <input type="submit" class="send" value="SEND">
             </div>
         </form>
     </div>
