@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <header></header>
     <!-- Left-Sidebar -->
     <nav class="left-sidebar">
-        <img src="../assets/logo.png" alt="newsmeter logo" width="100%">
+        <a href="../index.html"><img src="../assets/logo.png" alt="newsmeter logo" width="100%"></a>
         <div class="link-container">
             <span><img src="../assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
             <a href="../index.html" class="nav-link">BERANDA</a>
@@ -39,10 +37,10 @@
                   Sign Up
               </a>
         </div>
-        <form>
-            <input type="email" class="login-input-email" placeholder="Email" required>
+        <form id="login-form" action="../index.html">
+            <input type="email" id="login-input-email" class="login-input-email" placeholder="Email" required>
             <img src="../assets/email-icon-login.png" class="profile-icon">
-            <input type="password" class="login-input-password" placeholder="Password" required>
+            <input type="password" id="login-input-password" class="login-input-password" placeholder="Password" required>
             <img src="../assets/password-icon-login.png" class="password-icon">
             <div class="form-options">
                 <label for="forgot-password">
@@ -52,7 +50,7 @@
                     <a href="#" id="journalist-login">Switch to Journalist Login</a>
                 </label>
             </div>
-            <button type="submit" class="login-button">LOGIN</button>
+            <button class="login-button">LOGIN</button>
         </form>
     </div>
 

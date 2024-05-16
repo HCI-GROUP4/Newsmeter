@@ -92,6 +92,10 @@ header .header-profile-container {
     letter-spacing: 1px;
 }
 
+.menu-after-login {
+    display: none;
+}
+
 /* FORM */
 .form-container {
     display: flex;

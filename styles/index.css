@@ -37,9 +37,13 @@ header input:focus {
     outline: 0;
 }
 
-header .login-button {
-    width: 135%;
-    height: 30px;
+header .to-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    min-width: 100px;
+    height: 60%;
     border-radius: 30px;
     color: #1B1A55;
     background-color: #9290C3;
@@ -47,6 +51,7 @@ header .login-button {
     font-size: var(--p-size);
     letter-spacing: 1px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 header .header-profile-container {
@@ -90,6 +95,10 @@ header .header-profile-container {
     text-decoration: none;
     color: var(--main-text-color);
     letter-spacing: 1px;
+}
+
+.menu-after-login {
+    display: none;
 }
 
 /* RIGHT SIDEBAR */

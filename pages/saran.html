@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/saran.css">
+    <script src="../scripts/main.js"></script>
     <title>Saran Berita</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
             <img src="../assets/search-icon.png" alt="search icon" height="75%">
             <input type="text" class="search-bar" placeholder="Search here...">
         </div>
-        <button id="login-button" class="login-button">LOGIN</button>
+        <a href="../pages/login.html" id="to-login-page" class="to-login-page">LOGIN</a>
         <div id="header-profile-container" class="header-profile-container">
             <img src="../assets/header-profile.png" alt="profile picture" height="80%">
             <p id="profile-name">[Name]</p>
@@ -23,14 +24,22 @@
 
     <!-- Left Sidebar -->
     <nav class="left-sidebar">
-        <img src="../assets/logo.png" alt="newsmeter logo" width="100%">
+        <a href="../index.html"><img src="../assets/logo.png" alt="newsmeter logo" width="100%"></a>
         <div class="link-container">
             <span><img src="../assets/beranda-icon.png" alt="beranda icon" width="100%"></span>
-            <a href="index.html" class="nav-link">BERANDA</a>
+            <a href="../index.html" class="nav-link">BERANDA</a>
         </div>
         <div class="link-container">
             <span><img src="../assets/telusuri-icon.png" alt="telusuri icon" width="87%"></span>
             <a href="" class="nav-link">TELUSURI</a>
+        </div>
+        <div class="link-container menu-after-login">
+            <span><img src="../assets/saran-icon.png" alt="saran icon" width="90%"></span>
+            <a href="pages/saran.html" class="nav-link">SARAN</a>
+        </div>
+        <div class="link-container menu-after-login">
+            <span><img src="../assets/profile-icon.png" alt="profil icon" width="90%"></span>
+            <a href="" class="nav-link">PROFIL</a>
         </div>
     </nav>
 
