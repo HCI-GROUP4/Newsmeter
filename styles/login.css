@@ -62,6 +62,7 @@ header {
     float: left;
     clear: both;
     position: relative;
+    border-radius :5%;
 }
 
 .sidebar-form {
@@ -75,6 +76,7 @@ header {
     text-align: center; 
     line-height: 35px; 
     font-size: 20px; 
+    border-radius : 4%;
 }
 
 .sidebar-form.left {
