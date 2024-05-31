@@ -1,7 +1,19 @@
+:root {
+    --main-header-color: #333265;
+    --main-navbar-color: #1B1A55;
+    --main-text-color: #fff;
+    --p-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121636;
+    color: white;
+    display: flex;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +27,7 @@ header {
     padding: 0 2vw;
     border-bottom: solid rgba(255, 255, 255, .3) 1px;
     color: white;
+    z-index: 1000;
 }
 
 header .search-bar-container {
@@ -40,16 +53,10 @@ header input:focus {
     outline: 0;
 }
 
-header .login-button {
-    width: 10%;
-    height: 60%;
-    border-radius: 30px;
-    color: #1B1A55;
-    background-color: #9290C3;
-    border-width: 0px;
+header .to-login-page {
+    color: white;
+    text-decoration: none;
     font-size: var(--p-size);
-    letter-spacing: 1px;
-    font-weight: bold;
 }
 
 header .header-profile-container {
@@ -67,7 +74,7 @@ header .header-profile-container {
     align-items: flex-start;
     background-color: var(--main-navbar-color);
     padding: 50px 20px 10px 25px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     font-size: var(--p-size);
@@ -98,78 +105,61 @@ header .header-profile-container {
     display: none;
 }
 
-.blank-container {
-    width: calc(70% - 375px);
-    height: 75vh;
-    background-color: #1B1A55;
-    margin-left: calc(60% - 375px);
-    margin-top: calc(33% - 375px);
-    float: left;
-    clear: both;
-    position: relative;
-}
-
-.sidebar-box {
-    width: 350px;
-    height: 55px;
-    margin: 0%;
-    position: absolute;
-    top: 0;
-    padding: 10px; 
-    color: #fff; 
-    text-align: center; 
-    line-height: 35px; 
-    font-size: 20px; 
-}
-
-.sidebar-box.left {
-    left: 0;
-    background-color: #333265;
-}
-
-.sidebar-box.right { 
-    right: 0;
-    background-color: #9290C3;
-}
-
-.search-input-fname, .search-input-lname, .search-input-email, .search-input-password, .search-input-cpass {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 40px;
-    background-color: #D8D8D8;
-    border: none;
-    border-radius: 20px;
-    padding: 0 20px;
-    color: #333;
-    font-size: 16px;
+.main-content {
+    margin-left: 15vw;
+    margin-top: 8vh;
+    padding: 20px;
     box-sizing: border-box;
+    width: 85vw;
 }
 
-#signup-page, #login-page {
-    text-decoration: none;
-    color: var(--main-text-color);
-    letter-spacing: 1px;
+.article {
+    background-color: #1f2240;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.search-input-fname {
-    top: 80px;
+.article img.article-image {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.search-input-lname {
-    top: 140px;
+.article .image-caption {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
 }
 
-.search-input-email {
-    top: 260px;
+.article .article-details {
+    margin-top: 20px;
 }
 
-.search-input-password {
-    top: 320px;
+.article .article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.search-input-cpass {
-    top: 380px;
+.article .likes {
+    display: flex;
+    align-items: center;
 }
 
+.article .likes img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.article .comments {
+    flex-grow: 1;
+}
+
+.article .comments .comment {
+    margin-top: 10px;
+}
+
+.article .comments .commenter {
+    font-weight: bold;
+    display: block;
+}
