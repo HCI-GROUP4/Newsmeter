@@ -41,6 +41,11 @@ header .search-bar-container {
     gap: 5px;
 }
 
+header .search-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
 header input {
     background-color: rgba(0, 0, 0, 0);
     border: none;
@@ -66,6 +71,12 @@ header .header-profile-container {
     gap: 7px;
 }
 
+header .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .left-sidebar {
     width: 15vw;
     height: 100vh;
@@ -83,6 +94,10 @@ header .header-profile-container {
     gap: 25px;
 }
 
+.left-sidebar .logo {
+    width: 100%;
+}
+
 .link-container {
     display: flex;
     justify-content: flex-start;
@@ -91,8 +106,8 @@ header .header-profile-container {
     gap: 15px;
 }
 
-.link-container span:first-child {
-    width: 15%;
+.link-container .sidebar-icon {
+    width: 20px;
 }
 
 .link-container a {
@@ -146,7 +161,7 @@ header .header-profile-container {
     align-items: center;
 }
 
-.article .likes img {
+.article .likes .like-icon {
     width: 20px;
     margin-right: 10px;
 }
