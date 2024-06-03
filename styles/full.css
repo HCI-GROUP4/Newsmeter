@@ -12,6 +12,8 @@ body {
     background-color: #121636;
     color: white;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 header {
@@ -23,7 +25,6 @@ header {
     background-color: var(--main-header-color);
     position: fixed;
     top: 0;
-    left: 15vw;
     padding: 0 2vw;
     border-bottom: solid rgba(255, 255, 255, .3) 1px;
     color: white;
@@ -125,17 +126,22 @@ header .profile-picture {
     margin-top: 8vh;
     padding: 20px;
     box-sizing: border-box;
-    width: 85vw;
+    width: 70vw;
+    max-width: 70vw;
 }
 
 .article {
     background-color: #1f2240;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article img.article-image {
     width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -143,22 +149,26 @@ header .profile-picture {
     font-size: 14px;
     color: #aaa;
     margin-top: 10px;
+    text-align: center;
 }
 
 .article .article-details {
     margin-top: 20px;
+    text-align: justify;
 }
 
 .article .article-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-top: 20px;
 }
 
 .article .likes {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .article .likes .like-icon {
@@ -168,10 +178,16 @@ header .profile-picture {
 
 .article .comments {
     flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .article .comments .comment {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .article .comments .commenter {
