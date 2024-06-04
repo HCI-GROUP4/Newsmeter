@@ -16,19 +16,20 @@ body {
     align-items: flex-end;
 }
 
+/* HEADER */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 85vw;
     height: 8vh;
     background-color: var(--main-header-color);
     position: fixed;
     top: 0;
-    padding: 0 2vw;
-    border-bottom: solid rgba(255, 255, 255, .3) 1px;
+    left: 15vw;
+    border: solid rgba(255, 255, 255, .3);
+    border-width: 0 0 1px 0;
     color: white;
-    z-index: 1000;
 }
 
 header .search-bar-container {
@@ -40,11 +41,6 @@ header .search-bar-container {
     width: 50%;
     height: 60%;
     gap: 5px;
-}
-
-header .search-icon {
-    width: 20px;
-    margin-right: 10px;
 }
 
 header input {
@@ -60,9 +56,20 @@ header input:focus {
 }
 
 header .to-login-page {
-    color: white;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    min-width: 100px;
+    height: 60%;
+    border-radius: 30px;
+    color: #1B1A55;
+    background-color: #9290C3;
+    border-width: 0px;
     font-size: var(--p-size);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 header .header-profile-container {
@@ -72,12 +79,7 @@ header .header-profile-container {
     gap: 7px;
 }
 
-header .profile-picture {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
+/* LEFT SIDEBAR */
 .left-sidebar {
     width: 15vw;
     height: 100vh;
@@ -95,10 +97,6 @@ header .profile-picture {
     gap: 25px;
 }
 
-.left-sidebar .logo {
-    width: 100%;
-}
-
 .link-container {
     display: flex;
     justify-content: flex-start;
@@ -107,8 +105,8 @@ header .profile-picture {
     gap: 15px;
 }
 
-.link-container .sidebar-icon {
-    width: 20px;
+.link-container span:first-child {
+    width: 15%;
 }
 
 .link-container a {
@@ -132,11 +130,12 @@ header .profile-picture {
 
 .article {
     background-color: #1f2240;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 0px auto;
+    /* align-items: center; */
 }
 
 .article img.article-image {

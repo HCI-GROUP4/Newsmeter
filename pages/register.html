@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/register.css">
+    <script src="../scripts/register.js"></script>
     <title>Newsmeter</title>
 </head>
 <body>
@@ -29,9 +30,9 @@
         <div class="sidebar-box right">
             <a href="register.html" id="signup-page">Sign Up</a>
         </div>
-        <form onsubmit="validateForm(event)">
-            <input type="text" class="search-input-fname" placeholder="First Name" required>
-            <input type="text" class="search-input-lname" placeholder="Last Name" required>
+        <form action="login.html" onsubmit="validateForm(event)">
+            <input type="text" class="search-input-fname" id="search-input-fname" placeholder="First Name" required>
+            <input type="text" class="search-input-lname" id="search-input-lname" placeholder="Last Name" required>
 
             <div class="dob-container">
                 <select class="dob-select" id="dob-day" required>
@@ -54,8 +55,8 @@
             </div>
 
             <input type="email" class="search-input-email" placeholder="Email" required>
-            <input type="password" class="search-input-password" placeholder="Password" required>
-            <input type="password" class="search-input-cpass" placeholder="Confirm Password" required>
+            <input type="password" class="search-input-password" id="search-input-password" placeholder="Password" required>
+            <input type="password" class="search-input-cpass" id="search-input-cpass" placeholder="Confirm Password" required>
 
             <button type="submit" class="submit-button">Submit</button>
         </form>
