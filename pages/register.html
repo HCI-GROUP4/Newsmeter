@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/register.css">
-    <script src="scripts/index.js"></script>
     <title>Newsmeter</title>
 </head>
 <body>
@@ -34,34 +33,36 @@
                 Sign Up
             </a>
         </div>
-        <input type="text" class="search-input-fname" placeholder="First Name">
-        <input type="text" class="search-input-lname" placeholder="Last Name">
+        <form onsubmit="validateForm(event)">
+            <input type="text" class="search-input-fname" placeholder="First Name" required>
+            <input type="text" class="search-input-lname" placeholder="Last Name" required>
 
-        <div class="dob-container">
-            <select class="dob-select" id="dob-day">
-                <option value="" disabled selected>Day</option>
-                <script>
-                    for (let i = 1; i <= 31; i++) {
-                        document.write('<option value="' + i + '">' + i + '</option>');
-                    }
-                </script>
-            </select>
-            <select class="dob-select" id="dob-month">
-                <option value="" disabled selected>Month</option>
-                <script>
-                    for (let i = 1; i <= 12; i++) {
-                        document.write('<option value="' + i + '">' + i + '</option>');
-                    }
-                </script>
-            </select>
-            <input type="text" class="dob-input" id="dob-year" placeholder="Year">
-        </div>
+            <div class="dob-container">
+                <select class="dob-select" id="dob-day" required>
+                    <option value="" disabled selected>Day</option>
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                <select class="dob-select" id="dob-month" required>
+                    <option value="" disabled selected>Month</option>
+                    <script>
+                        for (let i = 1; i <= 12; i++) {
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                <input type="text" class="dob-input" id="dob-year" placeholder="Year" required>
+            </div>
 
-        <input type="text" class="search-input-email" placeholder="Email">
-        <input type="text" class="search-input-password" placeholder="Password">
-        <input type="text" class="search-input-cpass" placeholder="Confirm Password">
+            <input type="email" class="search-input-email" placeholder="Email" required>
+            <input type="password" class="search-input-password" placeholder="Password" required>
+            <input type="password" class="search-input-cpass" placeholder="Confirm Password" required>
 
-        <button type="submit" class="submit-button">Submit</button>
+            <button type="submit" class ="submit-button">Submit</button>
+        </form>
     </div>
 </body>
 </html>
