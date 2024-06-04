@@ -6,6 +6,33 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/register.css">
     <title>Newsmeter</title>
+    <!-- <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get form values
+            let firstName = document.querySelector('.search-input-fname').value;
+            let lastName = document.querySelector('.search-input-lname').value;
+            let day = document.querySelector('#dob-day').value;
+            let month = document.querySelector('#dob-month').value;
+            let year = document.querySelector('#dob-year').value;
+            let email = document.querySelector('.search-input-email').value;
+            let password = document.querySelector('.search-input-password').value;
+            let confirmPassword = document.querySelector('.search-input-cpass').value;
+
+            // Check if all fields are filled
+            if (firstName && lastName && day && month && year && email && password && confirmPassword) {
+                // Check if passwords match
+                if (password === confirmPassword) {
+                    window.location.href = 'login.html'; // Redirect to login page
+                } else {
+                    alert('Passwords do not match.');
+                }
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script> -->
 </head>
 <body>
     <header>
@@ -24,14 +51,10 @@
     </nav>
     <div class="blank-container">
         <div class="sidebar-box left">
-            <a href="login.html" id="login-page">
-                Login
-             </a>
+            <a href="login.html" id="login-page">Login</a>
         </div>
         <div class="sidebar-box right">
-            <a href="register.html" id="signup-page">
-                Sign Up
-            </a>
+            <a href="register.html" id="signup-page">Sign Up</a>
         </div>
         <form onsubmit="validateForm(event)">
             <input type="text" class="search-input-fname" placeholder="First Name" required>
@@ -61,10 +84,11 @@
             <input type="password" class="search-input-password" placeholder="Password" required>
             <input type="password" class="search-input-cpass" placeholder="Confirm Password" required>
 
-            <button type="submit" class ="submit-button">Submit</button>
+            <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
 </body>
 </html>
+
 
 
